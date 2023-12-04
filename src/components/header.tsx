@@ -11,10 +11,11 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from '@nextui-org/react';
+import paths from '@/paths';
 
 export default async function Header() {
   return (
-    <Navbar className="mb-2 bg-[#feba1f] text-md absolute">
+    <Navbar className=" bg-[#feba1f] text-md ">
       <NavbarItem>
         <Avatar></Avatar>
       </NavbarItem>
@@ -24,7 +25,13 @@ export default async function Header() {
         </Link>
       </NavbarBrand>
 
-      <NavbarContent justify="end">Sign In</NavbarContent>
+      <NavbarContent justify="end">
+        <Link href={paths.signInPage()}>
+          <Button variant="bordered" color="primary">
+            Sign In
+          </Button>
+        </Link>
+      </NavbarContent>
     </Navbar>
   );
 }

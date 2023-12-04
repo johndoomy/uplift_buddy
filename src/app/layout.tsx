@@ -19,11 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nanum.className} bg-[#ffeebb]`}>
+      <body className={`${nanum.className} `}>
         <div className="">
           <Providers>
             <Header />
-            {children}
+            <div className="">{children}</div>
           </Providers>
         </div>
       </body>

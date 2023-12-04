@@ -1,10 +1,15 @@
 import Image from 'next/image';
-import { Nanum_Pen_Script } from 'next/font/google';
+import { Nothing_You_Could_Do } from 'next/font/google';
+import { Reenie_Beanie } from 'next/font/google';
+import { Gochi_Hand } from 'next/font/google';
+import { Covered_By_Your_Grace } from 'next/font/google';
+import { Shadows_Into_Light_Two } from 'next/font/google';
+import { Over_the_Rainbow } from 'next/font/google';
 import heroImage from 'public/images/uplift-buddy-hero-7.png';
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 
-const nanum = Nanum_Pen_Script({ weight: '400', subsets: ['latin'] });
+const nanum = Reenie_Beanie({ weight: '400', subsets: ['latin'] });
 
 export default function Hero() {
   return (
@@ -20,9 +25,9 @@ export default function Hero() {
       </div>
       <div
         className="flex flex-col justify-center text-center items-center"
-        style={{ height: '45vh' }}
+        style={{ height: '38vh' }}
       >
-        <h1 className={`z-10 w-60 text-3xl ${nanum.className}`}>
+        <h1 className={`z-10 w-60 text-3xl lg:text-5xl ${nanum.className}`}>
           Brighten Your Day With A Message!
         </h1>
         <div className="text-center ">
